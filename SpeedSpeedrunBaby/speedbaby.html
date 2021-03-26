@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-  <A HREF="/index.html">Home</A><br><br>
+    <A HREF="/index.html">Home</A><br><br>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas"></canvas>
       <div id="unity-loading-bar">
@@ -28,11 +28,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/DevBuild.loader.js";
+      var loaderUrl = buildUrl + "/WebGL.loader.js";
       var config = {
-        dataUrl: buildUrl + "/DevBuild.data",
-        frameworkUrl: buildUrl + "/DevBuild.framework.js",
-        codeUrl: buildUrl + "/DevBuild.wasm",
+        dataUrl: buildUrl + "/WebGL.data.gz",
+        frameworkUrl: buildUrl + "/WebGL.framework.js.gz",
+        codeUrl: buildUrl + "/WebGL.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Speedrun Baby",
@@ -75,5 +75,7 @@
       };
       document.body.appendChild(script);
     </script>
+    <br><br>
+    <A HREF="/SizeSpeedrunBaby/speedbaby.html">Try this if it refuses to load</A>
   </body>
 </html>
